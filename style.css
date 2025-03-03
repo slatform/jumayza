@@ -12,7 +12,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Navigation */
 nav {
     position: sticky;
     top: 0;
@@ -48,7 +47,6 @@ nav ul li a:hover {
 .profile-icon::before { content: "\f007"; font-family: "Font Awesome 6 Free"; font-weight: 900; }
 .bag-icon::before { content: "\f290"; font-family: "Font Awesome 6 Free"; font-weight: 900; }
 
-/* Hero */
 .hero {
     text-align: center;
     padding: 4rem 1rem;
@@ -66,7 +64,6 @@ nav ul li a:hover {
     color: #666666;
 }
 
-/* Products */
 .products {
     max-width: 1200px;
     margin: 2rem auto;
@@ -108,7 +105,6 @@ nav ul li a:hover {
     text-align: center;
 }
 
-/* Icon Container */
 .icon-container {
     flex: 1;
     display: flex;
@@ -131,7 +127,6 @@ nav ul li a:hover {
     75% { transform: translateY(15px) rotateZ(3deg); }
 }
 
-/* Modal */
 .modal {
     display: none;
     position: fixed;
@@ -183,7 +178,6 @@ nav ul li a:hover {
     color: #666666;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 2rem;
@@ -191,7 +185,6 @@ footer {
     color: #FFFFFF;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     nav ul {
         justify-content: center;

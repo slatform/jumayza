@@ -18,7 +18,7 @@ const modalDesc = document.getElementById('modalDesc');
 
 cards.forEach(card => {
     card.addEventListener('click', (e) => {
-        if (e.target.closest('.icon-container')) return; // Prevent modal on icon drag
+        if (e.target.closest('.icon-container')) return;
         modalName.textContent = card.getAttribute('data-name');
         modalPrice.textContent = card.getAttribute('data-price');
         modalDesc.textContent = card.getAttribute('data-desc');
@@ -47,7 +47,7 @@ icons.forEach(icon => {
         isDragging = true;
         startX = e.clientX;
         startY = e.clientY;
-        icon.style.animation = 'none'; // Pause float animation during drag
+        icon.style.animation = 'none';
     });
 
     document.addEventListener('mousemove', (e) => {
@@ -66,7 +66,7 @@ icons.forEach(icon => {
     document.addEventListener('mouseup', () => {
         if (isDragging) {
             isDragging = false;
-            icon.style.animation = 'float 5s infinite ease-in-out'; // Resume float
+            icon.style.animation = 'float 5s infinite ease-in-out';
         }
     });
 
